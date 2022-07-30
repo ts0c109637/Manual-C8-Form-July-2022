@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manual C8 Form July 2022</title>
+  <style>
+    #textarea1 {
+      width: 250px;
+      height: 50px;
+    }
+
+
+    .Table1 {
+      border-style: groove;
+      border-collapse: separate;
+      border-spacing: 0 1em;
+    }
+
+    .Table2 {
+      border-style: groove;
+    }
+
+    .td_center {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <p style=float:right>
+      <u>Staple Receipt here</u><br>
+      Version: July 2022
+    </p>
+  </div>
+  <div class="header">
+    <img style=float:left src="Images/img1.jpg" height="80px" width="65px" alt="header image">
+  </div>
+  <br><br>
+  <h1 style=text-align:center>Key Information</h1>
+  <br>
+  <hr>
+  <form>
+    <table align="right">
+      <tr>
+        <td>New Customer:</td>
+        <td><input type="text" name="" value=""></td>
+      <tr>
+        <td>Upgrade:</td>
+        <td><input type="text" name="" value=""></td>
+      </tr>
+    </table>
+    <br><br>
+  </form>
+
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+  <h2><b>About you:</b></h2>
+  <form>
+    <table class="Table1" width=100%>
+      <tr>
+        <td>Name:*</td>
+        <td><input type="text" placeholder="Name" required</td>
+
+      </tr>
+      <tr>
+        <td>Address:*</td>
+        <td><textarea id="textarea1" name="textarea" placeholder="Address" required></textarea></td>
+      </tr>
+      <tr>
+        <td>Postcode:*</td>
+        <td><input type="text" placeholder="Postcode" required></td>
+        <td>Email:*</td>
+        <td><input type="text" placeholder="Email" required></td>
+      </tr>
+    </table>
+  </form>
+  <br>
+
+  <!-------------------------------------------------------------------------------------------------------------------------->
+
+  <h2><b>Package Details:</b></h2>
+  <form class="" action="index.html" method="post">
+    <table class="Table1" width=100%>
+      <tr>
+        <td>Device(Make/Model/Colour/Size):</td>
+        <td><textarea name="name" rows="1" cols="30"></textarea></td>
+      </tr>
+      <tr>
+        <td>IMEI:*</td>
+        <td><input type="number" name="" value="" required></td>
+        <td>Minimum Term:*</td>
+        <td><input type="text" name="" value="" required></td>
+      </tr>
+      <tr>
+        <td>Price plan:*</td>
+        <td><textarea name="name" rows="5" cols="40" required></textarea></td>
+        <td>Upfront cost:*</td>
+        <td><input type="number" name="" value="" required></td>
+      </tr>
+      <br>
+      <tr>
+        <td>MSISDN:*</td>
+        <td><input type="text" name="" value="" required></td>
+        <td>Early Upgrade Fee:</td>
+        <td><input type="text" name="" value="" required></td>
+      </tr>
+      <tr>
+        <td>Allowance Refresh:*</td>
+        <td><input type="text" name="" value="" required></td>
+        <td>Total Paid today:*</td>
+        <td><input type="text" name="" value="" required></td>
+      </tr>
+      <td>Channel Support upgrade reference number:</td>
+      <td><input type="text" name="" value=""></td>
+    </table>
+  </form>
+  <p><b><i> When completing a Manual Upgrade, you must print and attach a copy of the Customer Summary to this document.*</i></b></p>
+
+  <!--------------------------------------------------------------------------------------------------------------------------->
+
+  <h2>Your Package includes</h2>
+  <form class="" action="index.html" method="post">
+    <table class="Table1" width=100%>
+      <tr>
+        <th>Details</th>
+        <th align="left">Voice Mins:</th>
+        <th align="left">Texts:</th>
+        <th align="left">Data(GB):</th>
+        <th align="left">Price per month</th>
+      </tr>
+      <tr>
+        <th>Inclusive Allowances:*</th>
+        <td><input type="text" name="" value="" required></td>
+        <td><input type="text" name="" value="" required></td>
+        <td><input type="text" name="" value="" required></td>
+        <td><input type="text" name="" value="" required></td>
+      </tr>
+      <tr>
+        <th>Details</th>
+        <th align="left">Name:</th>
+        <th align="left">
+          Inclusive allowances <br>
+          /Claim Excess fee:
+        </th>
+        <th align="left">Price per month:</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="text" name="" value="" required></td>
+        <td><input type="text" name="" value="" required></td>
+        <td><input type="text" name="" value="" required></td>
+      </tr>
+    </table>
+    <br><br>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+
+    <form class="" action="index.html" method="post">
+      <table class="Table1" width=100%>
+        <tr>
+          <td>Add on:</td>
+          <td><textarea name="name" rows="1" cols="105"></textarea></td>
+        </tr>
+        <tr>
+          <td>Add on:</td>
+          <td><textarea name="name" rows="1" cols="105"></textarea></td>
+        </tr>
+        <tr>
+          <td>Three Insurance::</td>
+          <td><textarea name="name" rows="1" cols="105"></textarea></td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td><textarea name="name" rows="1" cols="105"></textarea></td>
+        </tr>
+      </table>
+      <form class="" action="index.html" method="post">
+        <table>
+          <td>
+            <h2>Total Per month:* £ </h2>
+          </td>
+          <td><input type="text" name="" value=""></td>
+        </table>
+      </form>
+    </form>
+
+    <p><b><i>Each April, your Monthly Charge will increase by 4.5%. Please see over the page for more information. </i></b></p>
+
+    <h2>About your bill:</h2>
+    <form class="" action="index.html" method="post">
+      <table class="Table1" width="100%">
+        <tr>
+          <td>We will set up your first bill within 9 days of creating your account and send you a notification once it's ready. Your bill will include details of when your payment is due. <input type="checkbox" name="" value=""></td>
+        </tr>
+        <tr>
+          <td>Stays the same <input type="checkbox" name="" value=""></td>
+        </tr>
+      </table>
+    </form>
+
+    <p>
+      You first bill will be higher than your usual monthly charge as we will charge you for a monthand upto 8 days so you can get started using Three straightaway.<br>
+      But don't worry, it wont be like this every month. By choosing to pay Direct Debit you will benifit a £5 monthly discount for paying by a recurring method. </p>
+
+    <h2>Increases to your Monthly Charge</h2>
+
+    <p>
+      The Monthly Charge for your Package (excluding Three Insurance) is the minimum price you agree to pay us for Three Services provided to you under this agreement, <br> for the Minimum Term. Each April your Monthly Charge will increase by 4.5%.
+      For example:
+    </p>
+
+    <table class="Table1" width=100%>
+      <tr>
+        <th>Monthly price until March 2023</th>
+        <th>Monthly price from April 2023 to March 2024</th>
+        <th>Monthly price from April 2024 to March 2025</th>
+      </tr>
+      <tr>
+        <td class="td_center">Price A</td>
+        <td class="td_center">Price A plus 4.5% (= Price B)</td>
+        <td class="td_center">Price B plus 4.5% (= Price C)</td>
+      </tr>
+      <tr>
+        <td class="td_center" colspan="3">We've set out an example below, showing how this would work if your Monthly Charge is £30.</td>
+      </tr>
+      <tr>
+        <td class="td_center">£30.00</td>
+        <td class="td_center">£30 + £1.35 (4.5% of £30.00) = £31.35</td>
+        <td class="td_center">£31.35 + £1.41(4.5% of £31.35) = £32.76</td>
+      </tr>
+    </table>
+
+    <h2>Important Information</h2>
+    <h3>Visit three.co.uk/welcome to find out all the key information you need to get started, including setting up your new device and how to manage your account with My3.</h3>
+    <p>
+      Unless stated otherwise, the below informationapplies toall Advanced plans. If you're looking for any pricing information for your plan including details of our fair use policy, this can be found at www.three.co.uk/priceguide
+    </p>
+
+    <h2>About your allowance - for all Advanced Plan and Mobile Broadband Customers</h2>
+    <p>
+      As part of your Package, you get a monthly allowance of Voice Minutes, Text Messages and/or Data (if you’re on a Mobile Broadband package your plan only includes Data) for use in the UK and subject to paying a daily charge, in our Go Roam
+      destinations.
+    </p>
+    <h3>Using your allowance abroad</h3>
+    <p>There is a £2 daily charge to unlock your UK allowances in Go Roam in Europe destinations and a £5 daily charge to use your UK allowances in Go Roam Around the World destinations.
+      Republic of Ireland and the Isle of Man are excluded from the daily charge. The charge starts when you use any of your allowances in a Go Roam destination including making calls
+      , sending texts or using data and lasts for 24 hours. You can use your plan’s allowance to: (1) call and text back to the UK; (2) call and text between our Go Roam in Europe
+      destinations and; (3) get online - all subject to our fair use policies, which are available in full at www.three.co.uk/priceguide and may be updated from time to time. If you've
+      used all of your plan allowances and are in the EU it's 3p/min to call back to the UK or to another EU country, free to receive calls & texts, 2p/to send an SMS and 1p/MB to use
+      data. Countries not covered in the Go Roam destinations are charged at standard roaming rates at the time of use – www.three.co.uk/priceguide for latest information and pricing.</p>
+    <p>If you’vechosen a plan with a data allowancegreater than 12GB, a monthly fair use limit of 12GB applies in our Go Roam destinations, with data usage over 12GB (up to your allowance)<br> being subject to a surcharge.</p>
+
+    <h3>Other key things to note about your plan</h3>
+    <ul>
+      <li>If you're calling a number starting 084, 087, 09 and 070 from the UK, Three's access charge is 65p per minute. You'll also be charged a service charge by the company you're calling.</li>
+
+      <li>All of your data allowance can be used as a personal hotspot within the UK, the EU and the EEA (subject to our Fair Use Policies)</li>
+
+      <li>Calls to Three Customer Services are free on these plans and won't come out of any allowance.</li>
+    </ul>
+
+    <h2>About your allowance - for all home broadband customers</h2>
+    <p>Our advertised and estimated maximum upload and download speeds for our broadband internet services, provided as part of the Three Services, are set out in our estimated broadband
+      speeds table, available at: www.three.co.uk/broadband-speed. We do not guarantee that our broadband service will achieve any specific speeds. The speeds achieved by our broadband
+      service will depend on factors such as your geographic location, the type of walls and windows in your building, the number of people using the network, the external environment, and
+      the correct setup of your hub.</p>
+    <p>The variability of the download and upload speeds achieved, and the technology used to access the broadband services, may affect your experience of our services and your ability to
+      access and distribute information and content, and use and provide applications and services.</p>
+    <p>In the event that you experience continuous or regularly recurring disruption to the broadband services you may be entitled to a price reduction based upon the period of the disruption, in
+      accordance with Section 5.13 Disruption to Three Services.</p>
+
+    <h2>If your contract includes Smartwatch Pairing</h2>
+    <p>
+      Smartwatch Pairing is included as part of your contract. Smartwatch Pairing allows you to share your phone’s allowances and number, with your Apple Watch. You need to have Smartwatch
+      Pairing active on your Three account to enable the cellular use of the watch. You can activate Smartwatch Pairing on your account by going through the pairing journey on your iPhone and Apple Watch.
+      For information about how to make emergency calls from your Apple Watch, please see the manufacturer’s website. As Smartwatch Pairing forms part of your plan, although you can unpair your Apple Watch
+      from your phone at any time, you can only cancel the service by ending your agreement with Three in accordance with the terms and conditions, and Cancellation Fees may apply.
+    </p>
+
+    <h2>Agreement to have your selected Device sent to you at your address</h2>
+    <p>In certain instances, for example, if we do not have the device which forms part of your Package (as detailed above)in stock today, you agree that we will send this to your address (detailed above),
+     at no additional cost to you, by signing the box below:</p>
+
+     <form class="" action="index.html" method="post">
+       <table class="Table1" width=100%>
+         <tr>
+           <th align="left">Customer name:*</th>
+           <th align="left">Customer signature:*</th>
+           <th align="left">Date:*</th>
+         </tr>
+         <tr>
+           <td><input type="text" name="" value=""></td>
+           <td>_________________</td>
+           <td><input type="date" name="" value=""></td>
+         </tr>
+       </table>
+     </form>
+
+     <h2>Our Returns Policy and ending your agreement</h2>
+     <p>Our full Returns Policy can be found online at Three.co.uk/returns, but please make sure you're happy with your selection before completing your purchase, as if you purchase from a Three store and take your new device home with you, and you change your mind, you'll be unable to return or exchange your device. If your purchase is being sent to you separately, you'll have 14 days from receipt to return your device if you change your mind or 30 days if you're a Home Broadband customer - please see Three.co.uk/returns for details.</p>
+     <p>If you want to end your contract before your Minimum Term is up, you'll need to pay a lump sum equivalent to all of your remaining monthly payments added up, less a variable discount, currently 3%.</p>
+     <p>By going ahead with this today, you're agreeing to our terms for using our network and services. A full copy of our terms and conditions are available on three.co.uk/terms. You should note that we try to make sure our services are available to you where you need them, but it is possible that the quality or coverage may be affected at times. Where this happens, we've limited our legal liability to you. You must keep up to date with your payments to us for services you've used. If you don't pay on time, your account may be suspended or disconnected</p>
+
+     <form class="" action="index.html" method="post">
+       <table class="Table1" width=100%>
+         <tr>
+           <th align="left">Customer name:*</th>
+           <th align="left">Customer signature:*</th>
+           <th align="left">Date:*</th>
+         </tr>
+         <tr>
+           <td><input type="text" name="" value=""></td>
+           <td>_________________</td>
+           <td><input type="date" name="" value=""></td>
+         </tr>
+       </table>
+     </form>
+     <form class="" action="index.html" method="post">
+       <table class="Table1" width=100%>
+         <tr>
+           <th align="left">Advisor name:*</th>
+           <th align="left">Advisor signature:*</th>
+           <th align="left">Date:*</th>
+         </tr>
+         <tr>
+           <td><input type="text" name="" value=""></td>
+           <td>_________________</td>
+           <td><input type="date" name="" value=""></td>
+         </tr>
+       </table>
+     </form>
+
+     <h2>Three Insurance</h2>
+     <form class="" action="index.html" method="post">
+       <table class="Table1" width=100%>
+         <tr>
+           <td>Device (Make/Model/Colour/Size)</td>
+           <td> <textarea name="name" rows="1" cols="40"></textarea></td>
+           <td><b>Cover Chosen</b></td>
+         </tr>
+         <tr>
+           <td>Monthly premium (price per month)</td>
+           <td> <textarea name="name" rows="1" cols="40"></textarea></td>
+           <td>Full Cover<input type="checkbox" name="" value=""></td>
+         </tr>
+         <tr>
+           <td>Maximum Policy Excess</td>
+           <td> <textarea name="name" rows="1" cols="40"></textarea></td>
+           <td>Damage Cover<input type="checkbox" name="" value=""></td>
+         </tr>
+       </table>
+     </form>
+
+     <h2>Additional information about Three Insurance</h2>
+     <p>If added, Three Insurance will protect your Three device. There are two types of cover to choose from. Your chosen cover type is shown above and will be confirmed in your welcome pack, which will be sent to you shortly.</p>
+     <p><b>Damage Cover:</b> covers Accidental Damage for your Mobile Phone or Connected Device and provides an extended warranty after the expiry of the manufacturer's warranty.</p>
+     <p><b>Full Cover:</b> covers Loss, Theft & Accidental Damage for your Mobile Phone or Connected Device and provides an extended warranty after the expiry of the manufacturer's warranty.</p>
+     <p>Cover starts at the same time as your new contract. For full terms, including how to complain, go to www.three.co.uk/insurance. Your monthly premium will appear on your Three account (shown on your Three bill under "other charges"). If you complete a claim you'll need to pay a claim excess fee. Your premium is shown in the table above, alongside your choice of Full or Damage Cover and you can find details of the claims excess fees in your Three Insurance welcome pack. If you change your mind you can cancel Three Insurance within 28 days and we'll refund your premium, provided you haven't made a claim. After that you can cancel at any time and cover will finish at the end of the paid period. Your cover will be cancelled if you cancel your Three contract or otherwise after 60 months. The Insurer is Starr International (Europe) Limited, which is authorised by the Prudential Regulation Authority ("PRA") and regulated by the Financial Conduct Authority ("FCA") and the PRA. The administrator is SquareTrade Limited, which is authorised and regulated by the FCA (no. 538538) in the United Kingdom. Registered office: 5 Golden Square, London, W1F 9BS, United Kingdom.</p>
+     <p>Further details about the cover are set out in the Insurance Product Information Document (IPID) that I just gave you, along with furth er details of the insurer, the administrator and how to make a complaint.</p>
+     <p><b>Please initial confirmation you were offered Three Insurance today and the summary table above reflects your decision. Your initials also confirm that you have received the IPID I have just provided:</b></p>
+
+     <form class="" action="index.html" method="post">
+       <table class="Table1" align="right" >
+        <tr>
+          <td>Customer Initial:</td>
+          <td>_________________</td>
+        </tr>
+       </table>
+     </form>
+</body>
+
+</html>
